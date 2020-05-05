@@ -1,0 +1,22 @@
+body {
+    background-color: #e3e2df;
+}
+
+div.flexOuter {
+    background-color: slateblue;
+    display: flex;
+    flex-direction: column;
+}
+div.footer {
+    background-color: slateblue;
+}
+
+div.flexInner {
+    background-color: salmon;
+    display: flex;
+    flex-direction: row;
+}
+
+div.content {
+    background-color: skyblue;
+}
