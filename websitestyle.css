@@ -88,3 +88,11 @@ img#pfp {
     border-color: #00887a;
     margin-right: 4em;
 }
+
+img#pidp {
+    float: left;
+    border-style: solid;
+    border-color: #00887a;
+    margin-right: 4em;
+    margin-bottom: 1.2em;
+}

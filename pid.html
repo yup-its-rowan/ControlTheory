@@ -18,7 +18,12 @@
                     <div class="rightSideBorder"></div>
                     <div class="content">
                         <h2>PID Loops</h2>
-                        <p>The base of Pure Pursuit is an algorithm that dynamically computes current location and an intended path to manipulate a body’s movement into a unique, smoothed form of path following.  Though there are many different ways of maintaining a  smoothed path following algorithm, Pure Pursuit defines itself by creating a unique  “look-ahead point” and then applying the correct vectors to move towards that point.</p>
+                        <p>A PID loop is one of the most basic open loop control mechanisms in general control theory. The loop itself can be split into three different control mechanisms: Proportional control, Integral control, and Derivative control.</p>
+                        <img id="pidp" src="images/pidp.png" width=300 alt="Chair" title="PID Loop visualised.">
+                        <p>The P for proportional control takes place within the idea that an object in motion would be better off slowing down as it reached its target. By taking in the error between where the object is and where it wants to be, the proportional power is calculated.</p>
+                        <p>The I for integral control operates under the assumption that in the real world, certain forces such as friction stop the object from reaching its destination. Since proportional control gives off low amounts of power closer to the target, integral control sums up the total error and gives the push the object needs to get to its target.</p>
+                        <p>The D for derivative control accomodates for a high proportional coefficient, usually materializing as a negative number to offset the power in the case that an object is moving too fast. This is also used to keep the object from accelerating too fast during the start of its movement.</p>
+                        <p>When added up all together, the values for PID, when tuned correctly, work together to give the object the correct amount of power to propel it to its destination smoothly.</p>
                     </div>
                 </div>
                 <div class="footer">
