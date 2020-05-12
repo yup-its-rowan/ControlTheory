@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="websitestyle.css">
+    </head>    
+    <body>
+        <div class=flexOuter>
+            <div class="header">
+                <h1>Beginner's Control Theory</h1>
+            </div>
+            <div class="topBorder"></div>
+            <div class="flexInner">
+                <div class="leftCol">
+                    <h2>Table of Contents</h2>
+                    <h3><a href="pid.html">PID Loops</a></h3>
+                    <h3><a href="purepursuit.html">Pure Pursuit</a></h3>
+                    <h3><a href="about.html">About</a></h3>
+                </div>
+                <div class="rightSideBorder"></div>
+                <div class="content">
+                    <h2>Time Based Auto</h2>
+                    <p>The most basic kind of autonomous robot movement is time-based. These closed loop autonomous programs have the robot apply a certain voltage to its motors for a specific amount of time. Though simple, these kinds of movements are prone to error, as a small difference in the charge of a battery could disrupt what was measured earlier to be a perfect run.</p>
+                    <h3>Basic Setup</h3>
+                    <p> A time-based autonomous is not very complicated. However, the basic setup necessary for the robots to be able to run the autonomous is indeed difficult.</p>
+                    
+                    <img id="time" src="images/time.png" width=300 alt="Time based autonomous" title="Time based autonomous.">
+                    <p> The image on the left shows the setup of the most basic time-based autonomous.</p>
+                    <ul>
+                        <li>The class extends LinearOpMode, which executed everything after the waitForStart(); method in order top to bottom.</li>
+                        <li>After instantiating two instances of the DcMotor class with value as null, the runOpMode method begins. </li>
+                        <li>The two motors are then set to the motors in the hardwareMap under the names "leftMotor" and "rightMotor".</li>
+                        <li>After the program has been started, a timer is created, and then reset.</li>
+                        <li>The motors are set to a certain power. After four seconds have passed, the powers are set back to zero. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Courtesy of Rohan Akki.</p>
+                <p>All Rights are not currently Reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -3,34 +3,39 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="websitestyle.css">
-        <body>
-            <div class=flexOuter>
-                <div class="header">
-                    <h1>Beginner's Control Theory</h1>
+    </head>    
+    <body>
+        <div class=flexOuter>
+            <div class="header">
+                <h1>Beginner's Control Theory</h1>
+            </div>
+            <div class="topBorder"></div>
+            <div class="flexInner">
+                <div class="leftCol">
+                    <h2>Table of Contents</h2>
+                    <h3><a href="pid.html">PID Loops</a></h3>
+                    <h3><a href="purepursuit.html">Pure Pursuit</a></h3>
+                    <h3><a href="about.html">About</a></h3>
                 </div>
-                <div class="flexInner">
-                    <div class="leftCol">
-                        <h2>Pages</h2>
-                        <h3><a id="item" href="pid.html">PID Loops</a></h3>
-                        <h3><a id="item" href="purepursuit.html">Pure Pursuit</a></h3>
-                        <h3><a id="item" href="about.html">About</a></h3>
-                    </div>
-                    <div class="rightSideBorder"></div>
-                    <div class="content">
-                        <h2>PID Loops</h2>
-                        <p>A PID loop is one of the most basic open loop control mechanisms in general control theory. The loop itself can be split into three different control mechanisms: Proportional control, Integral control, and Derivative control.</p>
-                        <img id="pidp" src="images/pidp.png" width=300 alt="Chair" title="PID Loop visualised.">
-                        <p>The P for proportional control takes place within the idea that an object in motion would be better off slowing down as it reached its target. By taking in the error between where the object is and where it wants to be, the proportional power is calculated.</p>
-                        <p>The I for integral control operates under the assumption that in the real world, certain forces such as friction stop the object from reaching its destination. Since proportional control gives off low amounts of power closer to the target, integral control sums up the total error and gives the push the object needs to get to its target.</p>
-                        <p>The D for derivative control accomodates for a high proportional coefficient, usually materializing as a negative number to offset the power in the case that an object is moving too fast. This is also used to keep the object from accelerating too fast during the start of its movement.</p>
-                        <p>When added up all together, the values for PID, when tuned correctly, work together to give the object the correct amount of power to propel it to its destination smoothly.</p>
-                    </div>
-                </div>
-                <div class="footer">
-                    <p>Courtesy of Rohan Akki.</p>
-                    <p>All Rights are not currently Reserved.</p>
+                <div class="rightSideBorder"></div>
+                <div class="content">
+                    <h2>PID Loops</h2>
+                    <p>A PID loop is one of the most basic open loop control mechanisms in general control theory. The loop itself can be split into three different control mechanisms: Proportional control, Integral control, and Derivative control.</p>
+                    <h3>PID Explained</h3>
+                    <img id="pidp" src="images/pidp.png" width=300 alt="PID" title="PID Loop visualised.">
+                    <p>The P for proportional control takes place within the idea that an object in motion would be better off slowing down as it reached its target. By taking in the error between where the object is and where it wants to be, the proportional power is calculated.</p>
+                    <p>The I for integral control operates under the assumption that in the real world, certain forces such as friction stop the object from reaching its destination. Since proportional control gives off low amounts of power closer to the target, integral control sums up the total error and gives the push the object needs to get to its target.</p>
+                    <p>The D for derivative control accomodates for a high proportional coefficient, usually materializing as a negative number to offset the power in the case that an object is moving too fast. This is also used to keep the object from accelerating too fast during the start of its movement.</p>
+                    <p>When added up all together, the values for PID, when tuned correctly, work together to give the object the correct amount of power to propel it to its destination smoothly.</p>
+                    <h3>PID Visualised</h3>
+                    <iframe id="pidvid" width="560" height="315" src="https://www.youtube.com/embed/fusr9eTceEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>This very helpful video visualizes PID control and how to minimize steady state error. Unlike in the video, the processing speed of the phones is nowhere near close enough to bump up the valueus into the thousands. However, it does give a strong starting point into how to tune a PID.</p>
                 </div>
             </div>
-        </body>
-    </head>
+            <div class="footer">
+                <p>Courtesy of Rohan Akki.</p>
+                <p>All Rights are not currently Reserved.</p>
+            </div>
+        </div>
+    </body>
 </html>

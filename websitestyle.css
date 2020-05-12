@@ -13,6 +13,9 @@ a:hover {
 a:active {  
     color:seagreen;  
 }
+a:visited {
+    color:seagreen;
+}
 
 div.flexOuter {
     display: flex;
@@ -38,6 +41,10 @@ div.rightSideBorder {
     background-color: #00887a;
     width: 0.3em;
 }
+div.topBorder {
+    background-color: #00887a;
+    height:0.3em;
+}
 div.content {
     background-color: white;
     padding: 1em;
@@ -51,7 +58,7 @@ p, h1 {
 
 div.content h2 {
     color: #00887a;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     margin-bottom: 0.6em;
 }
@@ -75,8 +82,31 @@ div.leftCol h2{
 }
 div.content p {
     color:rgb(95, 112, 129);
-    margin: 2em;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
     font-size: 1.25em;
+}
+div.content ul li {
+    color:rgb(95, 112, 129);
+    margin-left: 10%;
+    margin-right: 7%;
+    margin-bottom: 2%;
+    font-size: 1.25em;
+}
+
+div.content ul li ul li {
+    color:rgb(95, 112, 129);
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom:2%;
+    font-size: 1em;
+}
+
+div.content h3 {
+    color: #00887a;
+    margin-left: 5%;
+    font-size: 1.5em;
 }
 
 img#pfp {
@@ -86,10 +116,40 @@ img#pfp {
     margin-right: 4em;
 }
 
-img#pidp {
+img#pidp, img#time, img#encoder {
     float: left;
     border-style: solid;
     border-color: #00887a;
-    margin-right: 4em;
-    margin-bottom: 1.2em;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-bottom: 1.7%;
+}
+
+iframe#pidvid {
+    float: left;
+    border-style: solid;
+    border-color: #00887a;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-bottom: 1.7%;
+}
+
+@media (max-width: 750 px) {
+    body {
+        margin-left: 9%;
+        margin-right: 9%;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 0.9em;
+    }
+    h3, h1, h2 {
+        text-align: center;
+    }
+    p {
+        text-align: left;
+    }
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="websitestyle.css">
+    </head>    
+    <body>
+        <div class=flexOuter>
+            <div class="header">
+                <h1>Beginner's Control Theory</h1>
+            </div>
+            <div class="topBorder"></div>
+            <div class="flexInner">
+                <div class="leftCol">
+                    <h2>Table of Contents</h2>
+                    <h3><a href="pid.html">PID Loops</a></h3>
+                    <h3><a href="purepursuit.html">Pure Pursuit</a></h3>
+                    <h3><a href="about.html">About</a></h3>
+                </div>
+                <div class="rightSideBorder"></div>
+                <div class="content">
+                    <h2>Encoder Based Auto</h2>
+                    <p>A step up from a time-based auto is a purely encoder-based auto. Each motor in a basic encoder-based control system would have its own controller. Each controller applied a certain amount of power at a certain rate until the motor's encoder reached a certain set of rotations. Though more accurate than time-based autonomouses, the encoder-based auto isn't infallible.</p>
+                    <h3>More Advanced Setup</h3>
+                    <p>Building off of the setup from the time-based auto, the encoder-based auto excels with the use of custom methods. More about methods can be found <a href="https://www.geeksforgeeks.org/classes-objects-java/">here.</a></p>
+                    
+                    <img id="encoder" src="images/encoder.png" width=300 alt="Encoder based autonomous" title="Encoder based autonomous.">
+                    <p> The image on the left shows the setup of a basic encoder-based autonomous. Building on the structure from the time-based autonomous, the compact nature of this kind of encoder-based autonomous is in part due to the FTC SDK's built-in "setTargetPosition" feature.</p>
+                    <ul>
+                        <li>The very first method is used to reset the encoder values of the motors back to zero before starting rotations to a new target position.</li>
+                        <li>The next method is for setting an arbitrary power and changing the mode of the motors to run to a certain position.</li>
+                        <li>"powerBusy" also tells the robot not to do anything while the motors are stil running, and then to finally stop the robot once the movements are completed.</li>
+                        <li>Next to last, the "goForward" method tells the robot to go forward a certain amount of ticks, the orientation of the motors accounted for with a negative sign on the motors that are backwards in orientation to an arbitrary "front" of the robot.</li>
+                        <li>As an example, the robot is told to go forward a certain amount of encoder ticks. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Courtesy of Rohan Akki.</p>
+                <p>All Rights are not currently Reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
