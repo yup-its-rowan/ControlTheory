@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="websitestyle.css">
+    </head>    
+    <body>
+        <div class=flexOuter>
+            <div class="header">
+                <h1>Beginner's Control Theory</h1>
+            </div>
+            <div class="topBorder"></div>
+            <div class="flexInner">
+                <div class="leftCol">
+                    <h2>Table of Contents</h2>
+                    <h3><a href="concepts.html">Basic Concepts</a></h3>
+                    <h3><a href="timeBased.html">Time Based Auto</a></h3>
+                    <h3><a href="encoderBased.html">Encoder Based Auto</a></h3>
+                    <h3><a href="pid.html">PID Control</a></h3>
+                    <h3><a href="advanced.html">Advanced Topics</a></h3>
+                </div>
+                <div class="rightSideBorder"></div>
+                <div class="content">
+                    <h2>Advanced Control Theory</h2>
+                    <p>The world of FTC-level control theory is extremely tested. There are plenty of ways to develop your skills as a programmer even further, even though they aren't going to be explained here. However, I will be linking to more prestigous videos and papers for a more diverse glimpse at what you can pursue in the future.</p>
+                    <h3>Pure Pursuit</h3>
+                    <p>The base of Pure Pursuit is an algorithm that dynamically computes motor powers based on a current location and an intended path. This computation manipulates the robot's movement into a unique, smoothed form of path following. Pure Pursuit defines itself from other path following algorithms by creating a unique  “look-ahead point”, and then applying the correct vectors to move towards that point.</p>
+                    <p> Here are some links to reputed pure pursuit algorithms. </p>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=3l7ZNJ21wMo">11115's Pure Pursuit Algorithm</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=2qGsBClh3hE">Path Following Video by The Coding Train</a></li>
+                    </ul>
+                    <h3>Road Runner</h3>
+                    <p>Instead of Pure Pursuit's dynamic path following algorithm, Road Runner is a more traditional trajectory generation and motion planning library. Written specifically for FTC, this pre-made library is a more static path-following. Instead of computing motor powers depending on the difference between the target and the current position, Road Runner plans out entire trajectories using parametric equations, and then executes the planned motion.</p>
+                    <p> Here are some links to Road Runner documentation. </p>
+                    <ul>
+                        <li><a href="https://www.learnroadrunner.com/">Noah Bres's Road Runner documentation</a></li>
+                        <li><a href="https://github.com/acmerobotics/road-runner-quickstart">Road Runner Quickstart</a></li>
+                    </ul>
+                    <h3>Guiding Vector Fields</h3>
+                    <p>The two methods above are the most commonly used. However, talk of the next generation of path following algorithms leans heavily on Guiding Vector Fields. These fields are a essentially a map of vectors that push a robot towards a general path.</p>
+                    <p> A paper on GVF is linked below. </p>
+                    <ul>
+                        <li><a href="https://arxiv.org/pdf/1610.04391.pdf">GVF Path Following Algorithm Paper</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Courtesy of Rohan Akki.</p>
+                <p>All Rights are not currently Reserved.</p>
+                <p><a href="about.html">About</a></p>
+            </div>
+        </div>
+    </body>
+</html>
